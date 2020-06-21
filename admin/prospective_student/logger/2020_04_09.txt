@@ -1,0 +1,14 @@
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_09 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+

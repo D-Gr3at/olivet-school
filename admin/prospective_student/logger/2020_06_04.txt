@@ -1,0 +1,2 @@
+2020_06_04 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000174' and program ='101'
+

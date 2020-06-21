@@ -1,0 +1,1 @@
+SELECT COUNT(curriculum_id) AS counter FROM curriculum_setup_tbl WHERE  1 = 1  order by curriculum_id asc

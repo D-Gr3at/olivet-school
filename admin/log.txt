@@ -1,0 +1,1 @@
+insert into department_setup_tbl (posted_by,faculty,department,programme_name,programme_duration,established,status) VALUES ('Sam James','1','1','community health extension worker','3','2006','1')

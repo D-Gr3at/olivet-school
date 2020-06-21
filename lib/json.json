@@ -1,0 +1,42 @@
+{
+    "serviceTypeId": "2865036284",
+    "amount": "200250",
+    "orderId": "00000435",
+    "payerName": "hghhg",
+    "payerEmail": "info@erex.com.ng",
+    "payerPhone": "0",
+    "description": "",
+    "lineItems": [{
+            "lineItemsId": "0031",
+            "beneficiaryName": "Envinerge Limited",
+            "beneficiaryAccount": "0072009087",
+            "bankCode": "050",
+            "beneficiaryAmount": "114000",
+            "deductFeeFrom": "0"
+        },
+        {
+            "lineItemsId": "0032",
+            "beneficiaryName": "Data Tech WA LTD",
+            "beneficiaryAccount": "0027848900",
+            "bankCode": "215",
+            "beneficiaryAmount": "3800",
+            "deductFeeFrom": "0"
+        },
+        {
+            "lineItemsId": "0033",
+            "beneficiaryName": "BP3",
+            "beneficiaryAccount": "0021648914",
+            "bankCode": "039",
+            "beneficiaryAmount": "5700",
+            "deductFeeFrom": "0"
+        },
+        {
+            "lineItemsId": "accessng001",
+            "beneficiaryName": "ASL",
+            "beneficiaryAccount": "0760547017",
+            "bankCode": "214",
+            "beneficiaryAmount": "250",
+            "deductFeeFrom": "0"
+        }
+    ]
+}

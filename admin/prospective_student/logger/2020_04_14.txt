@@ -1,0 +1,2 @@
+2020_04_14 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000003' and program ='101'
+

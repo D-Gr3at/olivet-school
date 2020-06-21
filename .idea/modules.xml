@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:/xampp2/htdocs/egas/.idea/egas.iml" filepath="C:/xampp2/htdocs/egas/.idea/egas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nurse/.idea/nurse.iml" filepath="$PROJECT_DIR$/../nurse/.idea/nurse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/olivet.iml" filepath="$PROJECT_DIR$/.idea/olivet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../thrift/.idea/thrift.iml" filepath="$PROJECT_DIR$/../thrift/.idea/thrift.iml" />
+    </modules>
+  </component>
+</project>

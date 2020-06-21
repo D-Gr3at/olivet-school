@@ -1,0 +1,100 @@
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 200393657447 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 240393657449 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 200393683347 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 150393683420 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 260393657488 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 200393657490 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 250393683463 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- rrr response from remitta: rrr: => 240393683472 status => Payment Reference generated msg => 
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000004' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+
+2020_04_20 by nursing --- using  ::1 -- nursing school. ::: select * from app_applicant_account_setup where linkCode='JIXtBpmUsdQI1aO1GuSfg8CAUcL5zHHWH6v4sPZSqCb2SwcaW86Jdjd26m13FrWJ' and program ='101'
+

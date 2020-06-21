@@ -1,0 +1,54 @@
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='gC08opTJi3oa0HhVAj8FU9FkGYgEROKur94ZEbhkx9BMaMo9QofRdY24qe7js2q1' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- nursing school. ::: select * from applicant_account_setup where linkCode='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000001' and program ='101'
+
+2020_04_10 by nursing --- using  ::1 -- Olivet Aceeptance Payment. ::: select * from app_applicant_account_setup where reg_id='20202020000001' and program ='101'
+
