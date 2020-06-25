@@ -158,8 +158,8 @@ class ProgrammeCourse extends dbobject{
                             return json_encode(array("response_code"=>20,"response_message"=>$validation['messages'][0]));
                         }
 
-                        $query = "INSERT INTO course_setup_tbl(course_title, course_duration, course_unit, course_code, programme_course_fk) 
-                        VALUES ('". $value."',".$course_durations[$key].", ".$course_units[$key].", '".$course_codes[$key]."', ".$programme_course_id.")";
+                        $query = "INSERT INTO course_setup_tbl(course_title, course_duration, course_unit, course_code, programme_course_fk, status) 
+                        VALUES ('". $value."',".$course_durations[$key].", ".$course_units[$key].", '".$course_codes[$key]."', ".$programme_course_id.", 1)";
                         $check = $this->db_query($query, false);
                     }
                     // for ($count = 0; $count < sizeof($data['course_title']); $count++){
@@ -215,20 +215,13 @@ class ProgrammeCourse extends dbobject{
                     $course_id = mysql_fetch_row($result);
                     $course_id = $course_id[0];
                     $course_ids = (array)$data['course_id'];
-                    // var_dump($course_ids);
                     $course_titles = $data['course_title'];
-                    // var_dump($course_titles);
                     if(sizeof($course_ids) != sizeof($course_titles)){
                         $diff = sizeof($course_titles) - sizeof($course_ids);
-                        // var_dump($diff);
                         for($k = 0; $k < $diff; $k++){
                             $course_id += 1;
                             array_push($course_ids, (string)$course_id);
-                            // var_dump($course_ids);
-                            // var_dump(end($course_ids));
                             $key = end(array_keys($course_ids));
-                            // var_dump($key);
-                            // var_dump($data['course_title'][$key]);
                             if($data['course_title'][$key] == ""){
                                 $validation['error'] = true;
                                 $validation['messages'][0] = "Course title field is required";
@@ -249,8 +242,8 @@ class ProgrammeCourse extends dbobject{
                                 $validation['messages'][0] = "Course unit field is required";
                                 return json_encode(array("response_code"=>20,"response_message"=>$validation['messages'][0]));
                             }
-                            $query = "INSERT INTO course_setup_tbl(course_title, course_duration, course_unit, course_code, programme_course_fk) 
-                                    VALUES ('". $data['course_title'][$key]."',". $data['course_duration'][$key].",". $data['course_unit'][$key].",'". $data['course_code'][$key]."', ".$data['programme_course_id'].")";
+                            $query = "INSERT INTO course_setup_tbl(course_title, course_duration, course_unit, course_code, programme_course_fk, status) 
+                                    VALUES ('". $data['course_title'][$key]."',". $data['course_duration'][$key].",". $data['course_unit'][$key].",'". $data['course_code'][$key]."', ".$data['programme_course_id'].", 1)";
                             // echo $query."\n";
                             $result = $this->db_query($query, false);
                             if($result > 0){

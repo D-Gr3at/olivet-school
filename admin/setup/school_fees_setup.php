@@ -168,7 +168,7 @@ $faculty_names = $dbobject->db_query($faculty_names_sql);
                             <label class="form-label">Programme<span class="asterik">*</span></label>
                             <?php
                             echo "<select class='form-control text-uppercase' name='department_option' id='department_option'>
-                            <option value=''>::NO OPTION TO SELECT::</option>";
+                            <option value=''>::NO PROGRAMME TO SELECT::</option>";
                             foreach ($department_options as $key => $value) {
                                 $option_name = $value['programme_name'];
                                 $option_id = $value['programme_id'];

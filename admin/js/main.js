@@ -2974,14 +2974,14 @@ $(document).on("change", "#department", function(){
 			var data = JSON.parse(response);			
 			if(data.response_code == 0){
 				$('#department_option').empty();
-				$('#department_option').append("<option value=''>::SELECT A DEPARTMENT OPTION::</option>");
 				var response_data = data.data;
 				if (response_data != null){
+					$('#department_option').append("<option value=''>::SELECT A PROGRAMME::</option>");
 					response_data.forEach((element, index) => {
 						$('#department_option').append("<option value='"+element.programme_id+"'>"+element.programme_name.toUpperCase()+"</option>");
 					});
 				}else{
-					$('#department_option').append("<option value=''>::NO OPTION TO SELECT::</option>");				}
+					$('#department_option').append("<option value=''>::NO PROGRAMME TO SELECT::</option>");				}
 			}else{
 				
 			}			
@@ -2992,9 +2992,17 @@ $(document).on("change", "#department", function(){
 
 $(document).on("change", ".course_department", function(){
 	var data = $(this).val();
-	// console.log(data);
+
 	var parent = this.parentNode.parentNode.nextElementSibling;
 	var myElement = parent.querySelector(".programme");
+
+	var checkbox = this.parentNode.parentNode.parentNode.lastElementChild;
+	checkbox.querySelector('input').checked = false;
+
+	var course_unit = this.parentNode.parentNode.parentNode.lastElementChild.previousElementSibling;
+	course_unit.querySelector("input").value = '';
+	
+	var course_title = this.parentNode.parentNode.parentNode.lastElementChild.previousElementSibling.previousElementSibling;
 	
 	$.ajax({
 		type: "POST",
@@ -3004,7 +3012,9 @@ $(document).on("change", ".course_department", function(){
 			var data = JSON.parse(response);			
 			if(data.response_code == 0){				
 				myElement.innerHTML = '';
+				course_title.querySelector("select").innerHTML = '';
 				myElement.innerHTML += "<option value=''>::SELECT A PROGRAMME::</option>";
+				course_title.querySelector("select").innerHTML += "<option value=''>::NO COURSE::</option>";
 				var response_data = data.data;
 				if (response_data != null){
 					response_data.forEach((element, index) => {
@@ -3051,7 +3061,7 @@ $(document).on("change", ".programme", function(){
 				var response_data = data.data;
 				if (response_data != null){
 					response_data.forEach((element, index) => {
-						myElement.innerHTML += "<option value='"+element.course_id+"'>"+element.course_code.toUpperCase()+"</option>";
+						myElement.innerHTML += "<option value='"+element.course_id+"'>"+element.course_title.toUpperCase()+"</option>";
 					});
 				}else{
 					myElement.innerHTML = "<option value=''>::NO COURSE::</option>";				}
@@ -3082,6 +3092,57 @@ $(document).on("change", ".course_code_class", function(){
 					myElement.value = response_data[0].course_unit;
 				}else{
 					myElement.value = "N/A"
+				}
+			}else{
+				
+			}			
+		}   
+	});
+
+});
+
+$(document).on("change", "#search_department", function(){
+	var department_id = $(this).val();
+	// console.log(department_id);
+	
+	// var parent = this.parentNode.parentNode.nextElementSibling;
+	// var myElement = parent.querySelector(".course_unit_class");
+	
+	// $.ajax({
+	// 	type: "POST",
+	// 	url: "utilities.php",
+	// 	data: {op:"Curriculum.getProgrammeCourseDetails", id:course_id},
+	// 	success: function (response) {
+	// 		var data = JSON.parse(response);			
+	// 		if(data.response_code == 0){
+	// 			$('#course_unit').empty();
+	// 			var response_data = data.data;
+	// 			if (response_data != null){
+	// 				myElement.value = response_data[0].course_unit;
+	// 			}else{
+	// 				myElement.value = "N/A"
+	// 			}
+	// 		}else{
+				
+	// 		}			
+	// 	}   
+	// });
+	$.ajax({
+		type: "POST",
+		url: "utilities.php",
+		data: {op:"Curriculum.getProgramme", id:department_id},
+		success: function (response) {
+			var data = JSON.parse(response);			
+			if(data.response_code == 0){
+				$('#search_programme').empty();
+				var response_data = data.data;
+				if (response_data != null){
+					$('#search_programme').append("<option value=''>::SELECT PROGRAMME::</option>");
+					response_data.forEach((element, index) => {
+						$('#search_programme').append("<option value='"+element.programme_id+"'>"+element.programme_name.toUpperCase()+"</option>");
+					});
+				}else{
+					$('#search_programme').append("<option value=''>::NO PROGRAMME TO SELECT::</option>");				
 				}
 			}else{
 				

@@ -1,1 +1,1 @@
-SELECT COUNT(curriculum_id) AS counter FROM curriculum_setup_tbl WHERE  1 = 1  order by curriculum_id asc
+SELECT COUNT(fee_id) AS counter FROM school_fees_setup WHERE  1 = 1  order by fee_id asc

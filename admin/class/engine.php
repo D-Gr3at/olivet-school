@@ -28,7 +28,7 @@ class engine extends dbobject
         $fields       = $this->prepare_column($columner);
 		
 		  $sql = "SELECT $fields FROM $table_name WHERE ".$this->prepareSearch($columner,$this->search).$this->date_filter($start_date,$end_date).$filter." order by ".$columner[$this->order]['db']." ".$this->dirs."  LIMIT ".$this->start.", ".$this->length;
-		//   echo $sql;
+		 // echo $sql;
 		// if($_SESSION['nnpc_username_sess'] == "hr@mail.com")
 		// {
 			file_put_contents('g_query.txt',$sql);
