@@ -1,6 +1,6 @@
 <?php
-error_reporting(1);
-session_start();
+// error_reporting(1);
+// session_start();
 // $included_files = get_included_files();
 // foreach ($included_files as $filename) {
 //     echo "$filename\n";

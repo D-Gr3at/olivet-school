@@ -1,9 +1,9 @@
 <?php
 
-use phpDocumentor\Reflection\Types\Null_;
+// use phpDocumentor\Reflection\Types\Null_;
 
-session_start();
-include_once('../libs/dbfunctions.php');
+// session_start();
+// include_once('../libs/dbfunctions.php');
 class SchoolCourses extends dbobject{
 
     public function schoolCoursesList($data){

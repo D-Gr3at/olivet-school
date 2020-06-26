@@ -254,17 +254,17 @@ function doOnLoad()
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
-                                <label class="form-label">Course Code<span class="asterik">*</span></label>
+                                <label class="form-label">Course Title<span class="asterik">*</span></label>
                                 <?php
                                     echo "<select class='form-control text-uppercase course_code_class' name='selected_course_code[]'>
                                     <option value=''>::NO COURSE CODE::</option>";
                                     foreach($programme_courses as $key => $values){
                                         if(strtoupper($v["selected_course_id"]) == strtoupper($values["course_id"]) ){
                                             $code = $dbobject->getitemlabel('course_setup_tbl', 'course_id', $v["selected_course_id"], 'course_code');
-                                            echo "<option value='".$values['course_id']."' selected='selected'>".$values["course_code"]."</option>";
+                                            echo "<option value='".$values['course_id']."' selected='selected'>".$values["course_title"]."</option>";
                                         }else{
                                             // $code = $dbobject->getitemlabel('course_setup_tbl', 'course_id', $v["selected_course_id"], 'course_code');
-                                            echo "<option value='".$values['course_id']."'>".$values["course_code"]."</option>";
+                                            echo "<option value='".$values['course_id']."'>".$values["course_title"]."</option>";
                                         }
                                     }
                                     echo "</select>";
@@ -318,7 +318,7 @@ function doOnLoad()
                             </div>
                             <div class="col-sm-2">
                                 <div class="form-group">
-                                    <label class="form-label">Course Code<span class="asterik">*</span></label>
+                                    <label class="form-label">Course Title<span class="asterik">*</span></label>
                                     <?php
                                         echo "<select class='form-control text-uppercase course_code_class' name='selected_course_code[]' id='selected_course_code'>
                                         <option value=''>::NO COURSE CODE::</option>";
@@ -437,7 +437,7 @@ function doOnLoad()
             "</div>"+
             "<div class='col-sm-2'>"+
                 "<div class='form-group'>"+
-                    "<label class='form-label'>Course Code<span class='asterik'>*</span></label>"+
+                    "<label class='form-label'>Course Title<span class='asterik'>*</span></label>"+
                     "<select class='form-control text-uppercase course_code_class' name='selected_course_code[]' id='selected_course_code'>"+
                         "<option value=''>::NO COURSE CODE::</option>"+
                     "</select>"+

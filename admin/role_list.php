@@ -8,11 +8,11 @@ include_once("libs/dbfunctions.php");
         <h6 class="card-subtitle text-muted">The report contains User Roles that have been setup in the system.</h6>
     </div>
     <div class="card-body">
-      <a class="btn btn-warning" onclick="getModal('setup/role_setup.php','modal_div')"  href="javascript:void(0)" data-toggle="modal" data-target="#defaultModalPrimary"></a>
+      <a class="btn btn-warning" onclick="getModal('setup/role_setup.php','modal_div')"  href="javascript:void(0)" data-toggle="modal" data-target="#defaultModalPrimary">Create Role</a>
         <div id="datatables-basic_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
             <div class="row">
                 <div class="col-sm-3">
-                    <label for="">Create Role</label>
+                    <label for=""></label>
                 </div>
             </div>
             <div class="row">

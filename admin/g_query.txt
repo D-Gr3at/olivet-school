@@ -1,1 +1,1 @@
-SELECT fee_id,faculty_id,department_id,programme_id,setup_level,academic_session,total_amount,status,posted_by,fee_id FROM school_fees_setup WHERE  1 = 1  order by fee_id asc  LIMIT 0, 10
+SELECT programme_id,department_id,programme_name,programme_duration,established,status,posted_by,programme_id FROM programme_setup WHERE  1 = 1  order by programme_name asc  LIMIT 0, 10

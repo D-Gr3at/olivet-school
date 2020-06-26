@@ -1,7 +1,5 @@
 <?php
 error_reporting(1);
-
-include_once("../../libs/dbfunctions.php");
 // $included_files = get_included_files();
 // foreach ($included_files as $filename) {
 //     echo "$filename\n";
@@ -88,7 +86,6 @@ class CourseRegistration extends dbobject{
     }
 
     public function saveCourseRegistration($data){
-        // var_dump($data);
         $date_created = date('Y-m-d h:i:s');
         $status = 1;
         $check = 0;
@@ -106,27 +103,21 @@ class CourseRegistration extends dbobject{
         if($total_credit_load > 24){
             return json_encode(array("response_code"=>13,"response_message"=>'Failed to register. Total credit unit cannot be greater than 24'));
         }
-        // if($department_option_id != ""){
-            
-        // }else{
-        //     $query = "SELECT course_reg_id, course_id FROM course_registration cr INNER JOIN student_information si ON cr.students_id = si.student_id
-        //             WHERE cr.students_id = ".$student_id." AND cr.semester = ".$semester." AND si.level = ".$level." AND si.department_id = ".$department_id;
-        // }
         $query = "SELECT course_reg_id, course_id FROM course_registration WHERE student_id = '".$student_id."' AND semester = ".$semester." AND level = ".$level;
-        echo $query."\n";
+        // echo $query."\n";
         $result = $this->db_query($query);
         if($result != NULL){
             $db_course_ids = array();
             foreach($result as $index => $value){
                 array_push($db_course_ids, $value['course_id']);
             }
-            var_dump($db_course_ids);
+            // var_dump($db_course_ids);
             foreach($elective_course_ids as $key => $value){
                 foreach($result as $key1 => $value1){
                     if($value == $value1['course_id']){
                         if($is_elective[$key] == "No"){
                             $query = "DELETE FROM course_registration WHERE course_id = ".$value1['course_id'];
-                            echo $query."\n";
+                            // echo $query."\n";
                             $update = $this->db_query($query, false);
                             if($update > 0){
                                 $update += 1;
@@ -135,13 +126,8 @@ class CourseRegistration extends dbobject{
                     }
                 }
                 if(!(in_array($value, $db_course_ids)) && $is_elective[$key] == "Yes"){
-                    // $sql_course_reg = "SELECT course_reg_id FROM course_registration ORDER BY course_reg_id DESC LIMIT 1";
-                    // $result = mysql_query($sql_course_reg);
-                    // $course_reg_id = mysql_fetch_row($result);
-                    // $course_reg_id = $course_reg_id[0];
-                    // $course_reg_id = $course_reg_id + 1;
                     $query = "INSERT INTO course_registration(student_id, course_id, created, status_r, semester, elected, modified, level) VALUES ('".$student_id."', ".$value.", '".$date_created."', ".$status.", ".$semester.", 1, '".$date_created."', ".$level.")";
-                    echo $query."\n";
+                    // echo $query."\n";
                     $update = $this->db_query($query, false);
                     if($update > 0){
                         $update += $update;
@@ -150,13 +136,8 @@ class CourseRegistration extends dbobject{
             }
         }else{
             for($index = 0; $index < sizeof($compulsory_course_ids); $index++){
-                // $sql_course_reg = "SELECT course_reg_id FROM course_registration ORDER BY course_reg_id DESC LIMIT 1";
-                // $result = mysql_query($sql_course_reg);
-                // $course_reg_id = mysql_fetch_row($result);
-                // $course_reg_id = $course_reg_id[0];
-                // $course_reg_id = $course_reg_id + 1;
                 $query = "INSERT INTO course_registration(student_id, course_id, created, status_r, semester, elected, modified, level) VALUES ('".$student_id."', ".$compulsory_course_ids[$index].", '".$date_created."', ".$status.", ".$semester.", 0, '".$date_created."', ".$level.")";
-                echo $query."\n";
+                // echo $query."\n";
                 $check = $this->db_query($query, false);
                 if($check > 0){
                     $check += $check;
@@ -165,13 +146,8 @@ class CourseRegistration extends dbobject{
             if($elective_course_ids != NULL){
                 foreach($elective_course_ids as $key => $value){
                     if($is_elective[$key] == "Yes"){
-                        // $sql_course_reg = "SELECT course_reg_id FROM course_registration ORDER BY course_reg_id DESC LIMIT 1";
-                        // $result = mysql_query($sql_course_reg);
-                        // $course_reg_id = mysql_fetch_row($result);
-                        // $course_reg_id = $course_reg_id[0];
-                        // $course_reg_id = $course_reg_id + 1;
                         $query = "INSERT INTO course_registration(student_id, course_id, created, status_r, semester, elected, modified, level) VALUES ('".$student_id."', ".$value.", '".$date_created."', ".$status.", ".$semester.", 1, '".$date_created."', ".$level.")";
-                        echo $query."\n";
+                        // echo $query."\n";
                         $check = $this->db_query($query, false);
                         if($check > 0){
                             $check += $check;

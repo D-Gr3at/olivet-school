@@ -1,1 +1,1 @@
-insert into department_setup_tbl (posted_by,faculty,department,programme_name,programme_duration,established,status) VALUES ('Sam James','1','1','community health extension worker','3','2006','1')
+insert into faculty_settup (faculty_id,posted_by,faculty_name,faculty_established,status,created) VALUES ('2','Sam James','Faculty of Agriculture','2009','1','2020-06-26 12:06:25')

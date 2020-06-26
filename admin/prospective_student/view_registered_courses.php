@@ -9,7 +9,7 @@ $dbobject = new myDbObject();
 $email = '';
 $reg_id = $_SESSION['reg_id'];
 
-var_dump($reg_id);
+// var_dump($reg_id);
 
 if(!isset($_SESSION['reg_id'])){
     header("Location:../index.php");

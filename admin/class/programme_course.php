@@ -1,9 +1,9 @@
 <?php
 
-use phpDocumentor\Reflection\Types\Null_;
+// use phpDocumentor\Reflection\Types\Null_;
 
-session_start();
-include_once('../libs/dbfunctions.php');
+// session_start();
+// include_once('../libs/dbfunctions.php');
 class ProgrammeCourse extends dbobject{
 
     public function programmeCourseList($data){
@@ -13,11 +13,11 @@ class ProgrammeCourse extends dbobject{
             array( 'db' => 'programme_course_id', 'dt' => 0),
             array( 'db' => 'department_id',  'dt' => 1, 'formatter'=>function($id, $row){
                 $department_name = $this->getitemlabel('department_setup_tbl','dapartment_id', $row['department_id'], 'department_name');
-                return $department_name;
+                return "<span class='text-uppercase'>".$department_name."</span>";
             }),
             array( 'db' => 'programme_id', 'dt' => 2, 'formatter'=>function($id, $row){
                 $programme_name = $this->getitemlabel('programme_setup','programme_id', $row['programme_id'], 'programme_name');
-                return $programme_name;
+                return "<span class='text-uppercase'>".$programme_name."</span>";
             }),
             // array( 'db' => 'level',  'dt' => 3, 'formatter'=>function($id, $row){
             //     $department_option_name = $this->getitemlabel('department_option','option_id', $row['option_id'], 'option_name');

@@ -53,16 +53,17 @@ class Menu extends dbobject
     }
     public function saveMenu($data)
     {
-        $menu_id      = $data['menu_id'];
+        $menu_id      = $this->paddZeros($this->getnextid("menu"), 2);//$data['menu_id'];
         $menu_name    = $data['menu_name'];
         $menu_url     = $data['menu_url'];
-        $parent_menu  = $data['parent_menu'];
+        $parent_menu  = $data['parent_id'];
         $parent_menu2 = $data['parent_menu2'];
         $menu_level   = $data['menu_level'];
 
         $sql = "insert into menu (menu_id,menu_name,menu_url,parent_id,parent_id2,menu_level,created) values( '$menu_id','$menu_name','$menu_url','$parent_menu','$parent_menu2','$menu_level',now())";
+        echo $sql;
         $this->db_query($sql);
-        return array('response_code'=>0,'response_message'=>'Menu Created Successfully');
+        return json_encode(array('response_code'=>0,'response_message'=>'Menu Created Successfully'));
     }
     
     public function menuList($data)
@@ -115,6 +116,26 @@ class Menu extends dbobject
                       </div>';
         }
         return $visible;
+    }
+
+    public function loadParentMenu($data)
+    {
+        $sql    = "SELECT * FROM menu WHERE parent_id = '#'";
+        $result = $this->db_query($sql);
+        if(count($result) > 0)
+        {
+            $r = array();
+            foreach($result as $row)
+            {
+                $r[] = array($row['menu_id'],$row['menu_name']);
+            }
+            return json_encode(array("response_code"=>0,"response_message"=>"Parent menu found", "data"=>$r));
+        }
+        else
+        {
+            return json_encode(array("response_code"=>44,"response_message"=>"No parent menu found"));
+        }
+        
     }
     
     private function inVisibleMenus($role_id)

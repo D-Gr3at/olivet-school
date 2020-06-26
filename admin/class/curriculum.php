@@ -1,9 +1,9 @@
 <?php
 
-use phpDocumentor\Reflection\Types\Null_;
+// use phpDocumentor\Reflection\Types\Null_;
 
-session_start();
-include_once('../libs/dbfunctions.php');
+// session_start();
+// include_once('../libs/dbfunctions.php');
 class Curriculum extends dbobject{
 
     public function curriculumList($data){
@@ -58,7 +58,6 @@ class Curriculum extends dbobject{
     }
 
     public function getProgramme($data){
-        // var_dump($data);
         $department_id = filter_var($data["id"], FILTER_SANITIZE_STRING);
         $query = "SELECT programme_id, programme_name FROM programme_setup WHERE department_id='$department_id'";
         $result = $this->db_query($query);
