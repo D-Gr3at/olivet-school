@@ -116,7 +116,9 @@ function doOnLoad()
                     $("#err").css('color','green')
                     $("#err").html(re.response_message)
                     getpage('menu_list.php','page');
-                    
+                    setTimeout(()=>{
+                        $('#defaultModalPrimary').modal('hide');
+                    },1000)
                 }
             else
                 {

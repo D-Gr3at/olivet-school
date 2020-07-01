@@ -53,17 +53,33 @@ class Menu extends dbobject
     }
     public function saveMenu($data)
     {
-        $menu_id      = $this->paddZeros($this->getnextid("menu"), 2);//$data['menu_id'];
-        $menu_name    = $data['menu_name'];
-        $menu_url     = $data['menu_url'];
-        $parent_menu  = $data['parent_id'];
-        $parent_menu2 = $data['parent_menu2'];
-        $menu_level   = $data['menu_level'];
+        var_dump($data);
+        if ($data["operation"] != 'edit'){
+            $menu_id      = $this->paddZeros($this->getnextid("menu"), 2);//$data['menu_id'];
+            $menu_name    = $data['menu_name'];
+            $menu_url     = $data['menu_url'];
+            $parent_menu  = $data['parent_id'];
+            $parent_menu2 = $data['parent_menu2'];
+            $menu_level   = $data['menu_level'];
 
-        $sql = "insert into menu (menu_id,menu_name,menu_url,parent_id,parent_id2,menu_level,created) values( '$menu_id','$menu_name','$menu_url','$parent_menu','$parent_menu2','$menu_level',now())";
-        // echo $sql;
-        $this->db_query($sql);
-        return json_encode(array('response_code'=>0,'response_message'=>'Menu Created Successfully'));
+            $sql = "insert into menu (menu_id,menu_name,menu_url,parent_id,parent_id2,menu_level,created) values( '$menu_id','$menu_name','$menu_url','$parent_menu','$parent_menu2','$menu_level',now())";
+            // echo $sql;
+            $this->db_query($sql);
+            return json_encode(array('response_code'=>0,'response_message'=>'Menu Created Successfully'));
+        }else{
+            $menu_id      = $data['id'];
+            $menu_name    = $data['menu_name'];
+            $menu_url     = $data['menu_url'];
+            $parent_menu  = $data['parent_id'];
+            $parent_menu2 = $data['parent_menu2'];
+            $menu_level   = $data['menu_level'];
+
+            $sql = "update menu  set menu_name = '$menu_name', menu_url = '$menu_url', parent_id = '$parent_menu' where menu_id = '$menu_id'";
+            // echo $sql;
+            $this->db_query($sql);
+            return json_encode(array('response_code'=>0,'response_message'=>'Menu Updated Successfully'));
+        }
+        
     }
     
     public function menuList($data)
