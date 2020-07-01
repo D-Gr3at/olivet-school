@@ -1,1 +1,1 @@
-SELECT COUNT(programme_id) AS counter FROM programme_setup WHERE  1 = 1  order by programme_name asc
+SELECT COUNT(menu_id) AS counter FROM menu WHERE  1 = 1  order by menu_id asc

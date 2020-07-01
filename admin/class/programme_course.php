@@ -71,7 +71,7 @@ class ProgrammeCourse extends dbobject{
     public function changeProgrammeCourseStatus($data){
         $programme_course_id = $data['programme_course_id'];
         $status   = ($data['current_status'] == 1)?"0":"1";
-        $sql      = "UPDATE programme_course_setup_tbl SET status =".$status." WHERE curriculum_id =".$programme_course_id."";
+        $sql      = "UPDATE programme_course_setup_tbl SET status =".$status." WHERE programme_course_id =".$programme_course_id."";
         $cc = $this->db_query($sql,false);
         if($cc){
             return json_encode(array('response_code'=>0,'response_message'=>'Action on programme course setup is now effective'));

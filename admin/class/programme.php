@@ -45,7 +45,8 @@ Class Programme extends dbobject{
                 }
                 
             }),
-		);
+        );
+        $filter = '';
         $datatableEngine = new engine();
 		echo $datatableEngine->generic_table($data,$table_name,$columner,$filter,$primary_key);
     }

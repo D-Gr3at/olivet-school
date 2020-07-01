@@ -47,6 +47,7 @@ class SchoolFees extends dbobject{
                 }  
             }),
         );
+        $filter = '';
         $datatableEngine = new engine();
 		echo $datatableEngine->generic_table($data,$table_name,$columner,$filter,$primary_key);
     }
@@ -133,7 +134,7 @@ class SchoolFees extends dbobject{
                             $total_amount += $other_fee;
                         }
                     }
-                    var_dump($total_amount);
+                    // var_dump($total_amount);
                     $data['created'] = date('Y-m-d h:i:s');
                     $data['modified'] = date('Y-m-d h:i:s');
                     $data['status'] = 1;
@@ -319,7 +320,7 @@ class SchoolFees extends dbobject{
                     // var_dump($data);
                     $fee_result = 0;
                     $sql = "SELECT * FROM school_fees_setup WHERE setup_level = ".$data['level']." AND academic_session =".$session_id." AND programme_id = ".$data['department_option']." AND department_id = ".$data['department']."";
-                    echo $sql."\n";
+                    // echo $sql."\n";
                     $fee_result = $this->db_query($sql, false);
                     if($fee_result > 0){
                         $validation['error'] = true;
