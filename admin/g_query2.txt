@@ -1,1 +1,1 @@
-SELECT COUNT(menu_id) AS counter FROM menu WHERE  1 = 1  order by menu_id asc
+SELECT COUNT(programme_course_id) AS counter FROM programme_course_setup_tbl WHERE  1 = 1  order by programme_course_id asc

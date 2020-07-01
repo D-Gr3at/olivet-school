@@ -5,7 +5,7 @@ $dbobject = new dbobject();
 $sql_ch_type = "SELECT id,name FROM church_type";
 $church_type = $dbobject->db_query($sql_ch_type);
 
-$sql_role = "SELECT * FROM role WHERE role_id <> '001' order by role_name";
+$sql_role = "SELECT * FROM role order by role_name";
 
 $roles = $dbobject->db_query($sql_role);
 

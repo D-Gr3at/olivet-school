@@ -70,8 +70,9 @@ function doOnLoad()
                         {
                             foreach($p['data'] as $key)
                             {
+                                $selected = $key[0] == $menu[0]['parent_id']? "selected": '';
                         ?>
-                                <option value="<?php echo $key[0]; ?>"><?php echo $key[1]; ?></opton>
+                                <option <?php echo $selected; ?> value="<?php echo $key[0]; ?>"><?php echo $key[1]; ?></opton>
                         <?php
                             }
                         }
@@ -80,7 +81,7 @@ function doOnLoad()
                     </select>
                 </div>
            </div> 
-           <div class="col-sm-6">
+           <!-- <div class="col-sm-6">
                <div class="form-group">
                     <label class="form-label">Menu Level</label>
                     <select name="menu_level" class="form-control">
@@ -90,7 +91,7 @@ function doOnLoad()
                         <option value="2">2</option>
                     </select>
                </div>
-           </div>
+           </div> -->
         </div>
         
         

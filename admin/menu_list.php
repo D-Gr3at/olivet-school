@@ -21,12 +21,12 @@ include_once("libs/dbfunctions.php");
                         <thead>
                             <tr role="row">
                                 <th>S/N</th>
-                                <th>Menu ID</th>
-                                <th>Menu URL</th>
+<!--                                <th>Menu ID</th>-->
                                 <th>Menu Name</th>
+                                <th>Menu URL</th>
                                 <th>Parent ID</th>
-                                <th>Menu Level</th>
-                                <th>Menu Order</th>
+<!--                                <th>Menu Level</th>-->
+<!--                                <th>Menu Order</th>-->
                                 <th>Menu Icon</th>
                                 <th>Action</th>
                                 <th>Created</th>
@@ -77,7 +77,20 @@ include_once("libs/dbfunctions.php");
     table.draw();
   }
     
-    
+    function deleteMenu(id)
+    {
+        let cnf = confirm("Are you sure you want to delete menu?");
+        if(cnf == true)
+            {
+                $.blockUI();
+                $.post("utilities.php",{op:"Menu.deleteMenu",menu_id:id},function(re){
+                    $.unblockUI();
+                    alert(re.response_message);
+                    getpage('menu_list.php',"page");
+                },'json')
+            }
+        
+    }
     function getModal(url,div)
     {
 //        alert('dfd');

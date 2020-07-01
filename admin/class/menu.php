@@ -61,7 +61,7 @@ class Menu extends dbobject
         $menu_level   = $data['menu_level'];
 
         $sql = "insert into menu (menu_id,menu_name,menu_url,parent_id,parent_id2,menu_level,created) values( '$menu_id','$menu_name','$menu_url','$parent_menu','$parent_menu2','$menu_level',now())";
-        echo $sql;
+        // echo $sql;
         $this->db_query($sql);
         return json_encode(array('response_code'=>0,'response_message'=>'Menu Created Successfully'));
     }
@@ -72,18 +72,21 @@ class Menu extends dbobject
 		$primary_key   = "menu_id";
 		$columner = array(
 			array( 'db' => 'menu_id', 'dt' => 0 ),
-			array( 'db' => 'menu_id', 'dt' => 1 ),
+//			array( 'db' => 'menu_id', 'dt' => 1 ),
+			array( 'db' => 'menu_name',  'dt' => 1 ),
 			array( 'db' => 'menu_url',  'dt' => 2 ),
-			array( 'db' => 'menu_name',  'dt' => 3 ),
-			array( 'db' => 'parent_id',  'dt' => 4,'formatter' => function( $d,$row ) 
+			array( 'db' => 'parent_id',  'dt' => 3,'formatter' => function( $d,$row ) 
                 {
-                    return ($d == "#")?"This is a Parent Menu":$d;
+                    return ($d == "#")?"This is a Parent Menu":$this->getitemlabel('menu','menu_id',$d,'menu_name');
                 } ),
-			array( 'db' => 'menu_level',  'dt' => 5 ),
-			array( 'db' => 'menu_order',  'dt' => 6 ),
-			array( 'db' => 'icon',  'dt' => 7 ),
-			array( 'db' => 'menu_id',  'dt' => 8 ),
-			array( 'db' => 'created', 'dt' => 9, 'formatter' => function( $d,$row ) {
+//			array( 'db' => 'menu_level',  'dt' => 5 ),
+//			array( 'db' => 'menu_order',  'dt' => 6 ),
+			array( 'db' => 'icon',  'dt' => 4 ),
+			array( 'db' => 'menu_id',  'dt' => 5,'formatter' => function( $d,$row ) {
+                
+						return '<a class="btn btn-warning" onclick="getModal(\'setup/menu_setup.php?op=edit&menu_id='.$d.'\',\'modal_div\')"  href="javascript:void(0)" data-toggle="modal" data-target="#defaultModalPrimary">Edit Menu</a> | <a class="btn btn-danger" onclick="deleteMenu(\''.$d.'\')"  href="javascript:void(0)" >Delete Menu</a>';
+					} ),
+			array( 'db' => 'created', 'dt' => 6, 'formatter' => function( $d,$row ) {
 						return $d;
 					}
 				)
