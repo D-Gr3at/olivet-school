@@ -53,7 +53,7 @@ class Menu extends dbobject
     }
     public function saveMenu($data)
     {
-        var_dump($data);
+        // var_dump($data);
         if ($data["operation"] != 'edit'){
             $menu_id      = $this->paddZeros($this->getnextid("menu"), 2);//$data['menu_id'];
             $menu_name    = $data['menu_name'];

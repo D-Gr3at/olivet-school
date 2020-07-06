@@ -1,1 +1,1 @@
-SELECT menu_id,menu_name,menu_url,parent_id,icon,menu_id,created FROM menu WHERE  1 = 1  order by menu_id asc  LIMIT 30, 10
+SELECT menu_id,menu_name,menu_url,parent_id,icon,menu_id,created FROM menu WHERE  1 = 1  order by menu_id asc  LIMIT 0, 10
